@@ -10,6 +10,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/css/site.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title>Sejal Chougule</title>
 
@@ -71,14 +74,36 @@
 
             <p> Yes he speaks little german too.</p>
 
-            <table>
-                <thead>
-                    <th style="text-align: center"> Quora</th>
-                    <th style="text-align: center"> Quora</th>
-                    <th style="text-align: center"> Quora</th>
-                    <th style="text-align: center"> Quora</th>
-                </thead>
-            </table>
+            <div class="container">
+                <h2>Hover Rows</h2>
+                <p>The .table-hover class enables a hover state on table rows:</p>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
 
