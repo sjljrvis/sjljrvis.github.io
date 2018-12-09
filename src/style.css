@@ -1,0 +1,253 @@
+
+body{
+  margin : 0px ;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px ;
+  color : #666666;
+}
+
+ul {
+  padding-inline-start: 5px;
+}
+
+a{
+  color: #9253d1;
+}
+
+.Header{
+  height: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding-left: 10%;
+  align-items: center;
+}
+
+.Header h2{
+  color: #9253d1;
+}
+
+.Navigation{
+  margin-left: auto;
+  margin-right: 10%;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Navigation h5{
+  margin: 0px 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.Footer{
+  height: 100px;
+  width : 100%;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+.Home{
+  width: 100%;
+
+}
+
+
+.Home .banner {
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Home .banner h1{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.Home .banner div>h3{
+  color: #9253d1;
+  text-align: center;
+}
+
+
+.Home .AboutMe{
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Home .AboutMe p{
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  line-height:2;
+}
+
+.Home .AboutMe span{
+  color: #9253d1;
+}
+
+span{
+  color: #9253d1;
+}
+
+.Jobdescription{
+  margin: 0px
+}
+
+
+.Skills{
+  width: 100%;
+}
+
+
+.Skills .banner {
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Skills .banner h1{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.Skills .banner div>h3{
+  color: #9253d1;
+  text-align: center;
+}
+
+
+.Skills .Info{
+  padding: 25px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Skills .Info p{
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  line-height:2;
+}
+
+.Skills .Info span{
+  color: #9253d1;
+}
+
+.Skills .CardContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.Skills .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 60px;
+  width: 100px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(234,234,234,1);
+-moz-box-shadow: 0px 0px 4px 1px rgba(234,234,234,1);
+box-shadow: 0px 0px 4px 1px rgba(234,234,234,1);
+  
+}
+
+
+
+
+
+.Lab{
+  width: 100%;
+}
+
+
+.Lab .banner {
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Lab .banner h1{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.Lab .banner div>h3{
+  color: #9253d1;
+  text-align: center;
+}
+
+
+.Lab .Projects{
+  padding: 25px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Lab .Projects p{
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  line-height:2;
+}
+
+.Lab .Projects span{
+  color: #9253d1;
+}
+
+.project-slider{
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(155,155,155,1);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(155,155,155,1);
+  box-shadow: 0px 0px 14px 2px rgba(155,155,155,1);
+}
+
+pre {
+  font-size: 12px;
+  line-height: 1.25;
+  background: #f3f3f3;
+  border-radius: 3px;
+  overflow-x: auto;
+}
