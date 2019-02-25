@@ -119,9 +119,9 @@ class Home extends Component {
 
 						<h2 style={{ marginTop: 30 }}>Developer Portfolio</h2>
 						<div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", width: 300, marginTop: 20 }}>
-							<img src={require('../../../images/icons/github.png')}></img>
-							<img src={require('../../../images/icons/npm.png')}></img>
-							<img src={require('../../../images/icons/angellist.png')}></img>
+							<a href="https://github.com/sjljrvis" target="_blank"><img src={require('../../../images/icons/github.png')}></img></a>
+							<a href="https://www.npmjs.com/~sjljarvis" target="_blank"><img src={require('../../../images/icons/npm.png')}></img></a>
+							<a href="https://angel.co/sejal-chougule" target="_blank"><img src={require('../../../images/icons/angellist.png')}></img></a>
 						</div>
 
 

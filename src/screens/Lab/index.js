@@ -118,7 +118,7 @@ class Lab extends Component {
 							<hr style={{ width: "60%", color: "#e2e2e2" }}></hr>
 
 	<div style={{ margin: "20px 0px" }}>
-							<h3>tocstack CLI</h3>
+							<h3>bigNano</h3>
 
 							<div style={{ padding: 5 }}>
 								<pre>

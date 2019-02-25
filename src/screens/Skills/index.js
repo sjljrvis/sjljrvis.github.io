@@ -7,7 +7,7 @@ class Skills extends Component {
 		super(props);
 		this.state = {
 			skills: [
-				"nodeJS", "golang", "react", "react-native", "vueJS", "docker", "RASA-NLU", "mongoDB", "EFK stack", "rabbitMQ", "AWS", "nGINX", "git"
+				"nodeJS", "golang", "react", "react-native", "vueJS", "docker", "RASA-NLU", "mongoDB", "EFK stack", "rabbitMQ", "AWS", "nGINX", "CI/CD","git"
 			]
 		}
 	}
