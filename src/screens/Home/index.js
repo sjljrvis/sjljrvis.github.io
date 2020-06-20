@@ -23,12 +23,11 @@ class Home extends Component {
 				</div>
 
 				<div className="Navigation">
-					<h5 style={{ borderBottom: "3px solid #9253d1", paddingBottom: 5 }} onClick={() => this.props.history.push('/')}>About</h5>
+					<h5 style={{ borderBottom: "3px solid #ed573d", paddingBottom: 5 }} onClick={() => this.props.history.push('/')}>About</h5>
 					<h5 onClick={() => this.props.history.push('/skills')}>Skills</h5>
 					<h5 onClick={() => this.props.history.push('/lab')}>Lab</h5>
 					<h5 onClick={() => this.props.history.push('/resume')}>Resume</h5>
-					<h5 onClick={() => this.props.history.push('/hire')}>Hire</h5>
-
+					{/* <h5 onClick={() => this.props.history.push('/hire')}>Hire</h5> */}
 				</div>
 
 
@@ -36,87 +35,64 @@ class Home extends Component {
 					<div className="banner">
 						<h1>Sejal Chougule</h1>
 						<div style={{ marginTop: 15 }}>
-							<h3>Fullstack Engineer</h3>
-							<img src={require('../../../images/new/coding.png')} style={{ height: 200, marginTop: 20 }}></img>
+							<h5> ENGINEER &nbsp;|&nbsp; PRODUCT &nbsp;|&nbsp; CREATOR </h5>
+							{/* <h3>Fullstack Engineer @Browserstack</h3> */}
+							{/* <img src={require('../../../images/new/coding.png')} style={{ height: 200, marginTop: 20 }}></img> */}
 						</div>
 					</div>
 
 
 					<div className="AboutMe">
-						<h2>About.me</h2>
 						<p>
-							Likes to stay Object oriented asynchronously, mostly writes in nodeJS and builds scalable software stuff for mobile and web
-						<br></br>Likes to experiment and implement quickly and  ♥ Open-Source
-						<br></br>Spends most of the time in front of laptop ,coding or watching silicon valley , weekends are for watching football
+							Hi &#128075;&#127996; I'm sejal, <br />
+							This site is a partial collection of projects I’ve worked on, stories I’ve written down, software I’ve published.<br />
+						  I like to build scalable software stuff for mobile and web  , ♥ Open-Source & like to experiment and impliment new stuff from scratch.<br />
+							<span>Fullstack Engineer</span> with strong hold on nodeJS, golang, react & RoR.
 					</p>
 
+						<div className="timeline">
+							<div className="timeline-item">
+								<div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+									<img src={require('../../../images/icons/browserstack-logo.png')} style={{ width: 30, height: 30, marginRight: 5 }} />
+									<h4>Browserstack</h4>
+								</div>
+								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Fullstack Engineer , June 2019 - Present</h5>
+								<ul style={{ listStyleType: 'none' }}>
+									<li> I have been working with growth & monetization team , implemented various A/B experiments to ensure growth for Live & Automate Product.</li>
+									<li> Revamped Unit / Functional Testing process & architecture ,which in turn helped reduce unit test execution time from ~21 mins to ~4 mins.</li>
+								</ul>
+							</div>
 
-						<h2 style={{ marginTop: 30 }}> Present</h2>
-						<div>
-							<ul>
-								<li>
-									<p style={{ marginTop: 30 }}>Building/training/Scaling  bots as a Full-Stack Engineer @ <span>techforce.ai </span></p>
-									<div style={{ padding: 5, }} className="Jobdescription">
-										<ul>
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i>Created SaaS platform for training of NLP data for bots & Designed infrastructure for the same</i></p>
-											</li>
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i>Built Chat interface for bots , bundled up list of custom widgets .</i></p>
-											</li>
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i>Built teacher-student collaboration platform from scratch with integrated bot (for <span>OECD.org</span>) </i></p>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<p style={{ marginTop: 30 }}>Creator / Fullstack Engineer @ <span>tocstack </span></p>
-									<div style={{ padding: 5, }} className="Jobdescription">
-										<ul>
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i>Created Platform as service (PaaS) for fast application deployment using git.<br></br>
-													tocstack lets developers deploy api/services using git and makes it easily accessible through linked subdomain.</i></p>
-											</li>
-										</ul>
-									</div>
-								</li>
-							</ul>
+
+							<div className="timeline-item">
+								<div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+									<img src={require('../../../images/icons/techforce-logo.png')} style={{ width: 30, height: 30, marginRight: 5 }} />
+									<h4>techforce.ai</h4>
+								</div>
+								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Product Engineer , March 2018 - June 2019</h5>
+								<ul style={{ listStyleType: 'none' }}>
+									<li> Created Platform to train NLP intent classification data , which helped team & customers manage & monitor NLP data under one hood.</li>
+									<li> Designed & implemented architecture to train NLP engine in dockerized and distributed manner.</li>
+									<li> Built pluggable chat interface for bots , with bunch of custom widgets.</li>
+								</ul>
+							</div>
+
+							<div className="timeline-item">
+								<div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+									<h4>binarynumbers.io</h4>
+								</div>
+								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Fullstack Developer ,  May 2017 - Feb 2018</h5>
+								<ul style={{ listStyleType: 'none' }}>
+									<li>Leads Managment System for <span>Damac</span></li>
+									<li> CMS/Website builder for Damac Properties-Dubai
+									Created backend to dynamically create landing pages/accelerated- mobile-pages and created
+									REST api for dynamic content mapping based on business-rules.</li>
+								</ul>
+							</div>
+
 						</div>
 
-
-						<h2 style={{ marginTop: 30 }}>Formerly</h2>
-						<div>
-							<ul>
-								<li>
-									<p style={{ marginTop: 30 }}>Fullstack Developer @ <span>binarynumbers.io</span></p>
-									<div style={{ padding: 5, }} className="Jobdescription">
-										<ul>
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i>Leads Managment System for <span>Damac Properties-Dubai</span><br></br>
-													Implemented backend to collect/filter/manage marketing data from hubspot & facebook  <br></br> & dynamically synced with salesforce. Improved success rate and optimized code-base</i></p>
-											</li>
-
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i><span>CMS/Website builder for Damac Properties-Dubai</span><br></br>
-													Created backend to dynamically create landing pages/accelerated- mobile-pages  and created <br></br> REST api for dynamic content mapping based on business-rules</i></p>
-											</li>
-
-											<li>
-												<p style={{ textDecoration: "italics", margin: 0, fontSize: 14 }}><i><span>boupon</span><br></br>
-													Created ecommerce platform from mobile recharge and coupons from scratch and single page vueJS application for frontend</i></p>
-											</li>
-
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-
-
-
-
+						{/* 
 						<h2 style={{ marginTop: 30 }}>Developer Portfolio</h2>
 						<div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", width: 300, marginTop: 20 }}>
 							<a href="https://github.com/sjljrvis" target="_blank"><img src={require('../../../images/icons/github.png')}></img></a>
@@ -130,7 +106,7 @@ class Home extends Component {
 							<img src={require('../../../images/icons/facebook.png')}></img>
 							<img src={require('../../../images/icons/linkedin.png')}></img>
 							<img src={require('../../../images/icons/quora.png')}></img>
-						</div>
+						</div> */}
 					</div>
 
 				</div>

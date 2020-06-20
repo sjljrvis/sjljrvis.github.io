@@ -27,7 +27,7 @@ class Lab extends Component {
 					<h5 onClick={() => this.props.history.push('/skills')}>Skills</h5>
 					<h5 onClick={() => this.props.history.push('/lab')}>Lab</h5>
 					<h5 onClick={() => this.props.history.push('/resume')}>Resume</h5>
-					<h5 style={{ borderBottom: "3px solid #9253d1", paddingBottom: 5 }} onClick={() => this.props.history.push('/hire')}>Hire</h5>
+					<h5 style={{ borderBottom: "3px solid #ed573d", paddingBottom: 5 }} onClick={() => this.props.history.push('/hire')}>Hire</h5>
 
 				</div>
 
@@ -40,7 +40,7 @@ class Lab extends Component {
 
 					<div className="Info">
 						<h2>Hire.me</h2>
-						<h3 style={{ marginTop: 40, color: "#9253d1" }}>Intrested in hiring me ?</h3>
+						<h3 style={{ marginTop: 40, color: "#ed573d" }}>Intrested in hiring me ?</h3>
 						<div style={{ width: "90%" }}>
 							<p style={{ marginTop: 20 }}>
 								At the moment, I am  available for Full-Time position
