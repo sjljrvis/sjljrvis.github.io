@@ -43,87 +43,91 @@ class Lab extends Component {
 				</div>
 
 				<div className="Lab">
-					<div className="banner">
+					{/* <div className="banner">
 						<img src={require('../../../images/new/scientist.png')} style={{ height: 200, marginTop: 20 }}></img>
 					</div>
-
+ */}
 
 
 					<div className="Projects">
 						<h2>Projects.me</h2>
-						<h3 style={{ fontWeight: "lighter", marginTop: 30 }}>A selected list of projects that I have contributed to or have made. Many more can be found out over at my Github profile.</h3>
+						<h4 style={{ fontWeight: "lighter", marginTop: 30 }}>A selected list of projects that I have contributed to or have made. Many more can be found out over at my Github profile.</h4>
 						<div style={{ width: "75%", marginTop: 30 }}>
-							<h3> <strong>Index</strong></h3>
-							<ol>
-								<li><a style={{ fontSize: 20 }}>tocstack PaaS</a></li>
-								<li><a style={{ fontSize: 20 }}>tocstack CLI</a></li>
-								<li><a style={{ fontSize: 20 }}>bigNano</a></li>
-							</ol>
 
-							<hr style={{ width: "60%", color: "#e2e2e2" }}></hr>
+
+							<hr style={{ width: "60%", borderTop: "1px solid #eee" }}></hr>
 
 							<div style={{ margin: "20px 0px" }}>
-								<h3>tocstack PaaS</h3>
 
 								<div style={{ padding: 5 }}>
-									<Slider {...settings} >
+									<div style={{ display: "flex", flexDirection: "row" }}>
+										<img src={require('../../../images/icons/upweb.png')} style={{ width: 30, height: 30, marginRight: 10 }}></img>
+										<h3> upweb.io </h3>
+									</div>
+									<p>
+										upweb is a Platform as a Service for fast application deployment using git. Developers can instantly create & deploy static / dynamic websites, REST APIs & microservices etc.
+										<br /> App created on upweb will be directly assigned a subdomain with a <span>SSL certificate</span>.
+									</p>
+									<Slider {...settings} style={{ marginTop: 10 }}>
 										<div >
-											<img className="project-slider" src={require('../../../images/projects/tocstack-1.png')} style={{ width: "75%", height: "75%", objectFit: "contain", margin: "10px auto" }} />
+											<img className="project-slider" src={require('../../../images/projects/upweb-1.png')} style={{ width: "60%", height: "50%", objectFit: "contain", margin: "10px auto" }} />
 										</div>
 
 										<div>
-											<img className="project-slider" src={require('../../../images/projects/tocstack-2.png')} style={{ width: "75%", height: "75%", objectFit: "contain", margin: "10px auto" }} />
+											<img className="project-slider" src={require('../../../images/projects/upweb-2.png')} style={{ width: "60%", height: "50%", objectFit: "contain", margin: "10px auto" }} />
 										</div>
 
 
 										<div>
-											<img className="project-slider" src={require('../../../images/projects/demo3.png')} style={{ width: "75%", height: "75%", objectFit: "contain", margin: "10px auto" }} />
+											<img className="project-slider" src={require('../../../images/projects/upweb-3.png')} style={{ width: "60%", height: "50%", objectFit: "contain", margin: "10px auto" }} />
 										</div>
 									</Slider>
-
-									<p>
-										tocstack is Cloud Platform as a Service for fast application deployment using git. It helps developers to seamlessly create, manage and deploy web applications,microservices,REST api etc.App created on tocstack is directly linked to a subdomain hello.tocstack.com. Fork
-									</p>
-									<p><strong> &lt;/&gt;Technology stacks used :-</strong> nodeJS, mongoDB, vueJs, docker nGinx, Digital Ocean</p>
+									<h4><strong> Features</strong></h4>
+									<h4> App : <a href="https://upweb.io/#/" target="_blank"> https://upweb.io </a> </h4>
+									<ul>
+										<li> Easy deployments with git </li>
+										<li> Dashboard to view / monitor logs </li>
+										<li> SSL certificates for all the hosted apps </li>
+									</ul>
+									<p><strong> &lt;/&gt;Technology stacks used :-</strong> <span className="span-code"> nodeJS </span> <span className="span-code"> golang </span>  <span className="span-code"> react-redux </span> <span className="span-code"> postgres-SQL </span>  <span className="span-code"> GCP </span></p>
 								</div>
 							</div>
 
 
 
 
-							<hr style={{ width: "60%", color: "#e2e2e2" }}></hr>
+							<hr style={{ width: "60%", borderTop: "1px solid #eee" }}></hr>
 
 							<div style={{ margin: "20px 0px" }}>
-								<h3>tocstack CLI</h3>
 
 								<div style={{ padding: 5 }}>
-									<Slider {...settings} >
-										<div >
-											<img className="project-slider" src={require('../../../images/projects/cli1.png')} style={{ width: "75%", height: "75%", objectFit: "contain", margin: "10px auto" }} />
-										</div>
-
-										<div>
-											<img className="project-slider" src={require('../../../images/projects/cli2.png')} style={{ width: "75%", height: "75%", objectFit: "contain", margin: "10px auto" }} />
-										</div>
-									</Slider>
-
+									<div style={{ display: "flex", flexDirection: "row" }}>
+										<img src={require('../../../images/icons/echo.png')} style={{ width: 30, height: 30, marginRight: 10 }}></img>
+										<h3> echo </h3>
+									</div>
 									<p>
-										tocstack is Cloud Platform as a Service for fast application deployment using git. It helps developers to seamlessly create, manage and deploy web applications,microservices,REST api etc.App created on tocstack is directly linked to a subdomain hello.tocstack.com. Fork
+										Simple syslog drain collection service developed to store & manage STDIN STOUT logs generated by containers hosted on upweb.io
 									</p>
-									<p><strong> &lt;/&gt;Technology stacks used :-</strong> nodeJS, mongoDB, commander</p>
+									<br />
+									<h4><strong> Features</strong></h4>
+									<ul>
+										<li> SYSLOG collection </li>
+										<li> Realtime logs </li>
+									</ul>
+									<p><strong> &lt;/&gt;Technology stacks used :-</strong> <span className="span-code"> golang </span> <span className="span-code"> redis </span>  <span className="span-code"> GCP </span></p>
 								</div>
 							</div>
 
 
 							<hr style={{ width: "60%", color: "#e2e2e2" }}></hr>
 
-	<div style={{ margin: "20px 0px" }}>
-							<h3>bigNano</h3>
+							<div style={{ margin: "20px 0px" }}>
+								<h3>bigNano</h3>
 
-							<div style={{ padding: 5 }}>
-								<pre>
-									<code>{
-										`
+								<div style={{ padding: 5 }}>
+									<pre>
+										<code>{
+											`
 	 const bignano = require('bignano');
    const settings = {
 			autoScale: true,
@@ -149,14 +153,14 @@ class Lab extends Component {
 		console.log(response);
 		});
 			`
-									}
+										}
 
-									</code>
-								</pre>
-								<p>
-									bignano is generic CRUD api package , simple intialization sets up CRUD api endpoint and also supports file storage service intergrated with tocstack - Cloud Platform as a Service for fast application deployment using git. Fork
+										</code>
+									</pre>
+									<p>
+										bignano is generic CRUD api package , simple intialization sets up CRUD api endpoint and also supports file storage service intergrated with tocstack - Cloud Platform as a Service for fast application deployment using git. Fork
 									</p>
-							</div>
+								</div>
 							</div>
 
 						</div>
@@ -165,7 +169,7 @@ class Lab extends Component {
 				</div>
 
 			</div>
-			
+
 		)
 	}
 }
