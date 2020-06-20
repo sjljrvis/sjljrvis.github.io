@@ -45,7 +45,7 @@ class Home extends Component {
 					<div className="AboutMe">
 						<p>
 							Hi &#128075;&#127996; I'm sejal, <br />
-							This site is a partial collection of projects I’ve worked on, stories I’ve written down, software I’ve published.<br />
+							This site is a partial collection of hobby projects I’ve worked on, software I’ve published & tinkering of apps & web I do in my free time <br />
 						  I like to build scalable software stuff for mobile and web  , ♥ Open-Source & like to experiment and impliment new stuff from scratch.<br />
 							<span>Fullstack Engineer</span> with strong hold on nodeJS, golang, react & RoR.
 					</p>
