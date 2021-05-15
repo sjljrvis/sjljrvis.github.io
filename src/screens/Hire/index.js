@@ -56,7 +56,7 @@ class Lab extends Component {
 						</p>
 
 						<p>
-							<a style={{margin:"10px 0px"}}>Click</a> here for resume<br></br>
+							{/* <a style={{margin:"10px 0px"}}>Click</a> here for resume<br></br> */}
 							<strong>Contact details</strong>
 							<ul>
 								<li>Contact no :(+91) 9167708340</li>
