@@ -27,7 +27,7 @@ class Home extends Component {
 					<h5 onClick={() => this.props.history.push('/skills')}>Skills</h5>
 					<h5 onClick={() => this.props.history.push('/lab')}>Lab</h5>
 					<h5 onClick={() => this.props.history.push('/resume')}>Resume</h5>
-					{/* <h5 onClick={() => this.props.history.push('/hire')}>Hire</h5> */}
+					<h5 onClick={() => this.props.history.push('/hire')}>Hire</h5>
 				</div>
 
 
@@ -60,6 +60,13 @@ class Home extends Component {
 								<ul style={{ listStyleType: 'none' }}>
 									<li> I have been working with growth & monetization team , implemented various A/B experiments to ensure growth for Live & Automate Product.</li>
 									<li> Revamped Unit / Functional Testing process & architecture ,which in turn helped reduce unit test execution time from ~21 mins to ~4 mins.</li>
+									<li>
+                      <p>
+                        Carried out major rails and ruby version upgrade from
+                        4.1.15 to 6.0.3.6 in core repository. Resulting in
+                        enhaced security and better API performance
+                      </p>
+                    </li>
 								</ul>
 							</div>
 

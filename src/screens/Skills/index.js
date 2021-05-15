@@ -34,7 +34,7 @@ class Skills extends Component {
 					<h5 style={{ borderBottom: "3px solid #ed573d", paddingBottom: 5 }} onClick={() => this.props.history.push('/skill')}>Skills</h5>
 					<h5 onClick={() => this.props.history.push('/lab')}>Lab</h5>
 					<h5 onClick={() => this.props.history.push('/resume')}>Resume</h5>
-					{/* <h5 onClick={() => this.props.history.push('/hire')}>Hire</h5> */}
+					<h5 onClick={() => this.props.history.push('/hire')}>Hire</h5>
 
 				</div>
 				<div className="Skills">

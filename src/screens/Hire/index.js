@@ -46,7 +46,7 @@ class Lab extends Component {
 								At the moment, I am  available for Full-Time position
 						</p>
 							<p style={{ marginTop: 20 }}>
-								I will be available for Backend/Full-stack/SDE level position. I have been lucky and grateful to have worked on various projects with small team. It had enabled me to assume various roles within each project which includes Back-end Engineer, Front-end Engineer, Devops Engineer etc. Working in multiple roles (mostly simultaneously), has enabled me to understand different parts of Technology stacks .
+								I will be available for Backend/Full-stack/SDE(level-2) position. I have been lucky and grateful to have worked on various projects with small team. It had enabled me to assume various roles within each project which includes Back-end Engineer, Front-end Engineer, Devops Engineer etc. Working in multiple roles (mostly simultaneously), has enabled me to understand different parts of Technology stacks .
 						</p>
 							<br></br>
 							<p>
