@@ -51,12 +51,32 @@ class Home extends Component {
 					</p>
 
 						<div className="timeline">
+
+						<div className="timeline-item">
+								<div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+									{/* <img src={require('../../../images/icons/browserstack-logo.png')} style={{ width: 30, height: 30, marginRight: 5 }} /> */}
+									<h4>Supervity.ai</h4>
+								</div>
+								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Senior Solution Engineer (CORE) , October 2021 - Present</h5>
+								<ul style={{ listStyleType: 'none' }}>
+									<li> Implemented SaaS Plans and pricing along with stripe payment integration.</li>
+									<li> Revamped automation job scheduling and queuing mechanism for better performance and enhanced error handling</li>
+									<li> Revamped/Re-structured webapp to make it scalable for better automation flow creation and optimized performance. </li>
+									<li>
+                      <p>
+											Improvised NLP training service to support parallel model training and along with log/error collection for better model-
+retraining resulting in improved nlp prediction results.
+                      </p>
+                    </li>
+								</ul>
+							</div>
+
 							<div className="timeline-item">
 								<div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
 									<img src={require('../../../images/icons/browserstack-logo.png')} style={{ width: 30, height: 30, marginRight: 5 }} />
 									<h4>Browserstack</h4>
 								</div>
-								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Fullstack Engineer , June 2019 - Present</h5>
+								<h5 style={{ textAlign: 'center', fontFamily: "Roboto Condensed", marginTop: 5 }}> Fullstack Engineer , June 2019 - September 2021</h5>
 								<ul style={{ listStyleType: 'none' }}>
 									<li> I have been working with growth & monetization team , implemented various A/B experiments to ensure growth for Live & Automate Product.</li>
 									<li> Revamped Unit / Functional Testing process & architecture ,which in turn helped reduce unit test execution time from ~21 mins to ~4 mins.</li>
