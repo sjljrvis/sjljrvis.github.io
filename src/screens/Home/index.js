@@ -35,7 +35,7 @@ class Home extends Component {
 					<div className="banner">
 						<h1>Sejal Chougule</h1>
 						<div style={{ marginTop: 15 }}>
-							<h5> ENGINEER &nbsp;|&nbsp; PRODUCT &nbsp;|&nbsp; CREATOR </h5>
+							<h5> ENGINEER &nbsp;|&nbsp; PRODUCT &nbsp; </h5>
 							{/* <h3>Fullstack Engineer @Browserstack</h3> */}
 							{/* <img src={require('../../../images/new/coding.png')} style={{ height: 200, marginTop: 20 }}></img> */}
 						</div>
