@@ -1,13 +1,14 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'docs'),
-    publicPath: '/',
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "docs"),
+    publicPath: "/",
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -15,28 +16,34 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './index.html',
-      filename: 'index.html',
+      template: "./index.html",
+      filename: "index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "public", to: "public" },
+        { from: "resume", to: "resume-files" },
+      ],
     }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist")
+      directory: path.join(__dirname, "public"),
     },
 
     compress: true,
@@ -45,5 +52,5 @@ module.exports = {
     // contentBase: path.join(__dirname, 'dist'),
     // compress: true,
     // port: 3000,
-  }
+  },
 };

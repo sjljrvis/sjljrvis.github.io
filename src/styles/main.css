@@ -6,6 +6,9 @@
   --programming-language-text: #313131;
   --hr-line: #EEE;
   --high-light-color: #f7c53d;
+  --pre-background: #272822;
+  --pre-color: #f8f8f2;
+
 }
 
 body {
@@ -26,6 +29,8 @@ body.dark-theme {
   --timeline-background-color: #ffffff;
   --hr-line: #777;
   --high-light-color: #4AF3C8;
+  --pre-background: #f8f8f2;
+  --pre-color: #272822;
 }
 
 p,h1,h2,h3,h4,h5,h6,a,div,ul,li {
@@ -33,6 +38,7 @@ p,h1,h2,h3,h4,h5,h6,a,div,ul,li {
 }
 
 header {
+  width: 90%;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -50,12 +56,22 @@ header {
   .container {
     width: 85%;
   }
+
+  header {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .home > .banner > h1, .skills > .banner > h1 {
+    font-size: 1.5em;
+  }
 }
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   right: 0px;
+  overflow-x: scroll;
 }
 
 nav ul {
@@ -70,11 +86,12 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 14px;
-  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  /* margin-top: 30px; */
   display: block; /* Ensure the link takes up the full height of the list item */
   padding: 10px 20px;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: unset;
 }
 
@@ -82,7 +99,7 @@ nav ul li a {
   height: 250px;
   align-items: center;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .home > .banner > h1, .skills > .banner > h1 {
@@ -247,4 +264,26 @@ footer {
 .bold {
   color: var(--text-color);
   font-weight: bolder;
+}
+
+pre, code {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Monokai color scheme */
+pre {
+  background: var(--pre-background);
+  color: var(--pre-color);
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+code {
+  background: var(--pre-background);
+  color: var(--pre-color);
+  padding: 2px 4px;
+  border-radius: 3px;
 }

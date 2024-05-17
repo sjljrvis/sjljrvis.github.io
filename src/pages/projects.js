@@ -3,7 +3,8 @@ import { useScramble } from "use-scramble";
 
 const _dict = [
   "Noteworthy projects I have made",
-  "More can be found here - https://github.com/sjljrvis",
+  "<a href='https://github.com/sjljrvis'>github/sjljrvis</a>",
+  "upweb.io, z-worker, gArc",
 ];
 
 const Projects = () => {
@@ -12,7 +13,7 @@ const Projects = () => {
     text: _dict[currentHeadingIndex],
     speed: 0.8,
     overflow: true,
-    scramble: 20,
+    scramble: 2,
   });
 
   useEffect(() => {

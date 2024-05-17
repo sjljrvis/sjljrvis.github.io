@@ -40,6 +40,7 @@ const Skills = () => {
         <div className="programming-laguages">mongoDB</div>
         <div className="programming-laguages">redis</div>
         <div className="programming-laguages">SQL</div>
+        <div className="programming-laguages">amqp</div>
         <div className="programming-laguages">nGINX</div>
         <div className="programming-laguages">docker</div>
         <div className="programming-laguages">aws</div>

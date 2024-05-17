@@ -9,6 +9,8 @@ import Home from "./pages/home";
 import Skills from "./pages/skills";
 import Projects from "./pages/projects";
 import Resume from "./pages/resume";
+import Blog from "./pages/blogs";
+
 import { Moon, Sun } from "@phosphor-icons/react";
 
 const App = () => {
@@ -44,6 +46,10 @@ const App = () => {
               </li>
 
               <li>
+                <Link to="/blogs">blogs</Link>
+              </li>
+
+              <li>
                 <Link>
                   {theme == "light" ? (
                     <Moon onClick={() => handleTheme("dark")} />
@@ -60,6 +66,7 @@ const App = () => {
           <Route path="skills" element={<Skills />} />
           <Route path="projects" element={<Projects />} />
           <Route path="resume" element={<Resume />} />
+          <Route path="blogs" element={<Blog />} />
         </Routes>
         <footer>
           <h4>hosted with ♥ on Github</h4>
