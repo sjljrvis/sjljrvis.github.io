@@ -17,15 +17,15 @@ const Resume = () => {
       </div>
 
       <object
-        data="https://sjljrvis.github.io/resume/sde-3-resume.pdf"
+        data="https://sjljrvis.github.io/resume-files/sde-3-resume.pdf"
         type="application/pdf"
         width="100%"
         height={800}
         style={{ marginTop: 50 }}
       >
-        <p>
+        <p style={{ textAlign: 'center' }}>
           <i>It appears you don't have a PDF plugin for this browser.</i>
-          <a href="https://sjljrvis.github.io/resume/sde-3-resume.pdf">
+          <a href="https://sjljrvis.github.io/resume-files/sde-3-resume.pdf">
             click here to download the PDF file.
           </a>
         </p>

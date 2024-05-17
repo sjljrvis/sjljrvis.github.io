@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import {
-  Navigate,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Link,
 } from "react-router-dom";
