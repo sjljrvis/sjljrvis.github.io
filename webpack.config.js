@@ -6,6 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
+    publicPath: '/',
     filename: 'bundle.js',
   },
   module: {
@@ -44,5 +45,5 @@ module.exports = {
     // contentBase: path.join(__dirname, 'dist'),
     // compress: true,
     // port: 3000,
-  },
+  }
 };
