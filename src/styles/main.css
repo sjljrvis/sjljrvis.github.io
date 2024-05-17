@@ -1,0 +1,250 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #313131;
+  --timeline-text-color: #ffffff;
+  --timeline-background-color: #000000;
+  --programming-language-text: #313131;
+  --hr-line: #EEE;
+  --high-light-color: #f7c53d;
+}
+
+body {
+  font-family: Nunito Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #313131;
+  font-weight: lighter;
+  font-style: normal;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-theme {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --timeline-text-color: #000000;
+  --timeline-background-color: #ffffff;
+  --hr-line: #777;
+  --high-light-color: #4AF3C8;
+}
+
+p,h1,h2,h3,h4,h5,h6,a,div,ul,li {
+  color:  var(--text-color);
+}
+
+header {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+}
+
+nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to display items horizontally */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  font-size: 14px;
+  margin-top: 30px;
+  display: block; /* Ensure the link takes up the full height of the list item */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: unset;
+}
+
+.home > .banner, .skills > .banner {
+  height: 250px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home > .banner > h1, .skills > .banner > h1 {
+  font-family: monospace;
+  font-weight: 200;
+}
+
+.home > p , .skills > p{
+  font-size: 16px;
+  line-height: 2;
+  word-spacing: .2em;
+}
+
+.highlight {
+  text-decoration-line:underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--high-light-color);
+  color: var(--high-light-color);
+  font-weight: bold;
+}
+
+.work-experience {
+  margin-top: 50px;
+}
+
+.timeline {
+  margin-top: 70px;
+  counter-reset: section 5;
+}
+
+.timeline-item {
+  max-width: 95%;
+  min-height: 200px;
+  font-size: 1em;
+  line-height: 1.75em;
+  border-image: linear-gradient(to right, var(--high-light-color) 0%, #f7c53d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px 0px 0px 0px;
+  position: relative;
+  color: black;
+}
+
+.timeline-item::before {
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 12px;
+  height: 30px;
+  width: 30px;
+  background-color: var(--timeline-background-color);
+  counter-increment: section -1;
+  content:  counter(section); 
+  color: var(--timeline-text-color);;
+}
+
+.timeline-item:nth-child(odd) {
+  border-left: 3px solid;
+  padding-left: 0;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: 100%;
+  margin-right: -15px;
+}
+
+.timeline-item:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.timeline-item:nth-child(even)::before {
+  right: 100%;
+  margin-right: -15px;
+}
+
+.timeline-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.timeline-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.timeline-content {
+  padding-left: 40px;
+}
+
+.work-exp-text {
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  margin: 0px;
+  font-weight: lighter;
+}
+
+.timeline-content > ul {
+  margin: 0px;
+}
+.timeline-content > ul > li > p {
+  margin: 0px;
+  font-size: 14px;
+  margin-top: 1.2em;
+}
+
+hr {
+  margin: 0px;
+  margin-top: 20px;
+  border-top : 1px solid var(--hr-line);
+  border-bottom: none;
+}
+
+.timeline-content > hr {
+  margin: 0px;
+  margin-top: 20px;
+  border-top : 1px solid var(--hr-line);
+  border-bottom: none;
+}
+
+footer {
+  margin: 100px 0px 50px 0px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer > h4,h6 {
+  margin: 0px;
+}
+
+.programming-laguages {
+  min-width: 40px;
+  padding: 10px 10px;
+  margin: 5px 10px;
+  width: fit-content;
+  background-color: #e2e2e2;
+  font-family: monospace;
+  text-align: center;
+  color: var(--programming-language-text);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.code {
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 13px;
+  color: #878787;
+}
+
+.bold {
+  color: var(--text-color);
+  font-weight: bolder;
+}
