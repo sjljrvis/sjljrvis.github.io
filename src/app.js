@@ -64,7 +64,7 @@ const App = () => {
         </Routes>
         <footer>
           <h4>hosted with ♥ on Github</h4>
-          <h6>Developed and Maintained by Sejal Chougule</h6>
+          <h6>Developed and Maintained by Sejal Chougule.</h6>
         </footer>
       </div>
     </Router>
