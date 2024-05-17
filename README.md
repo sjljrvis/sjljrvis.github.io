@@ -1,1 +1,0 @@
-# sejal.github.io
