@@ -29,6 +29,7 @@ const Skills = () => {
       <h3 style={{ fontWeight: 600, marginTop: 30 }}>Frameworks</h3>
       <div className="flex-row">
         <div className="programming-laguages">express</div>
+        <div className="programming-laguages">ruby-on-rails</div>
         <div className="programming-laguages">react</div>
         <div className="programming-laguages">react-native</div>
         <div className="programming-laguages">redux</div>
