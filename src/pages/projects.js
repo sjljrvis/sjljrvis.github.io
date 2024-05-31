@@ -60,6 +60,7 @@ const Projects = () => {
 
         <h4 className="bold">Technology stacks used</h4>
         <div className="flex-row">
+          <div className="programming-laguages">go</div>
           <div className="programming-laguages">express</div>
           <div className="programming-laguages">react</div>
           <div className="programming-laguages">react-native</div>
