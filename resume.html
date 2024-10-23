@@ -4,197 +4,422 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
-    integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
-    crossorigin="anonymous"
-  />
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <header>
-      <div class="nanum-myeongjo-regular">
+      <div class="">
         <div class="center-col">
-          <h2 class="nanum-myeongjo-bold">Sejal Chougule</h2>
-          <!-- <h5 class="nanum-myeongjo-regular">Fullstack</h5> -->
+          <h3 class="">Sejal Chougule</h3>
+          <!-- <h5 class="">Fullstack</h5> -->
         </div>
         <!-- <hr style="width: 85%; border-bottom: 1px solid #ccc; border-top-width: 0px;"/> -->
-        <div class="center" style="margin: 10px;">
-          <h5 >
-            <a class="margin-5">
-              sjlchougule@gmail.com
-            </a>
-            <i class="fa fa-circle" aria-hidden="true" style="font-size: 5px;color: #5f63bd"></i>
-            <a class="margin-5">
-              github.com/sjljrvis
-            </a>
-            <i class="fa fa-circle" aria-hidden="true" style="font-size: 5px;color: #5f63bd"></i>
-            <a class="margin-5">
-              (+91)-9167708340
-            </a>
-            <i class="fa fa-circle" aria-hidden="true" style="font-size: 5px;color: #5f63bd"></i>
-            <a class="margin-5">
-               sjljrvis.github.io
-            </a>
+        <div class="center" style="margin: 5px">
+          <h5>
+            <a class="margin-5"> sjlchougule@gmail.com </a>
+            <i
+              class="fa fa-circle"
+              aria-hidden="true"
+              style="font-size: 5px; color: #5f63bd"
+            ></i>
+            <a class="margin-5"> github.com/sjljrvis </a>
+            <i
+              class="fa fa-circle"
+              aria-hidden="true"
+              style="font-size: 5px; color: #5f63bd"
+            ></i>
+            <a class="margin-5"> (+91)-9167708340 </a>
+            <i
+              class="fa fa-circle"
+              aria-hidden="true"
+              style="font-size: 5px; color: #5f63bd"
+            ></i>
+            <a class="margin-5"> sjljrvis.github.io </a>
           </h5>
         </div>
       </div>
     </header>
 
-    <div class="nanum-myeongjo-regular">
-      <div >
-        <h5 class="color-light"> Work Experience </h5>
-      </div>
-      <hr style="width: 100%; border-bottom: 1px solid #ccc; border-top-width: 0px;"/>
-
+    <div class="">
+      <hr
+        style="
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          border-top-width: 0px;
+        "
+      />
       <div>
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> Supervity | Senior Solution engineer (Core team) | October 2021-Present</h5>
-          <h5 class="nanum-myeongjo-bold"> Hyderabad</h5>
+        <h5 class="color-light">Work Experience</h5>
+      </div>
+
+      <div class="we-section">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="purple-color">
+            Supervity, 
+            <span class="color-light font-light italic-font"
+              >Senior Solution engineer (Core team)
+            </span>
+            ,
+            <span class="color-light font-light italic-font">
+              October 2021-Present
+            </span>
+          </h5>
+          <h5 class="italic-font">Hyderabad</h5>
         </div>
-  
+
         <div class="color-light">
           <ul>
-          <li>Developed microservice responsible for generating and executing code within a no-code Gen-AI automation platform, enhancing automated workflow capabilities.</li>
-          <li>Revamped automation job scheduling and queuing mechanism in core platform for better throughput and solved bottleneck issues on rabbitMQ to process over <span class="nanum-myeongjo-extrabold"> 1200 automation-jobs/min </span> </li>
-          <li>Carried out version upgrades on Keycloak, rabbitMQ, and other dependant micro-services to <span class="nanum-myeongjo-extrabold"> solve 100+ security </span> vulnerabilities and make platform enterprise-ready.</li>
-          <li>Developed SaaS Plans pricing & subscription along with plan provisioning (paid, free-trial, upgrade).</li>
-          <li>Led re-structuring and refactoring of legacy web app codebase, incorporating modern React-flow-creation libraries and reduced development cycle from 4 days to 2 days</li>
+            <li>
+              Developed microservice responsible for executing thread-safe raw workflow-logic
+              generated by LLMs and integrating with supervity-automation plaform enhancing
+              automated workflow capabilities.
+            </li>
+            <li>
+              Worked on enhancing supervity chrome-extension to perform complex UI automation and made it 
+              enterprise-ready.
+            </li>
+            <li>
+              Carried out version upgrades on Keycloak, rabbitMQ, and other
+              dependant micro-services to
+              <span class="bold"> solve 100+  </span>
+              security vulnerabilities and make platform enterprise-ready.
+            </li>
+            <li>
+              Revamped automation job scheduling and queuing mechanism in core
+              platform for better throughput and solved bottleneck issues on
+              rabbitMQ to process over
+              <span class="bold"> 1200 automation-jobs/min </span>
+            </li>
+            <li>
+              Developed SaaS Plans pricing & subscription along with plan
+              provisioning (paid, free-trial, upgrade).
+            </li>
+            <li>
+              Led re-structuring and refactoring of legacy web app codebase,
+              incorporating modern React-flow-creation libraries and reduced
+              development cycle from <span class="bold"> 4 days to 2 days </span>.
+            </li>
           </ul>
         </div>
       </div>
 
-      <div>
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> Browserstack | Fullstack Engineer(Growth team) | June 2019-September 2021</h5>
-          <h5 class="nanum-myeongjo-bold"> Mumbai </h5>
+      <div class="we-section">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="purple-color">
+            Browserstack, <span class="color-light font-light italic-font">
+              Fullstack Engineer (Growth team)
+            </span>
+            ,
+            <span class="color-light font-light italic-font">
+              June 2019-September 2021
+            </span>
+          </h5>
+          <h5 class="italic-font">Mumbai</h5>
         </div>
         <div class="color-light">
           <ul>
-            <li>Carried out Ruby on Rails and Ruby version upgrade from 4.1.15 to 6.0.3.6 in the core repository. Resulting in enhanced security and better API performance. Documented process to make future version upgrades simpler.</li>
-            <li>Helped team revamp Unit/Functional Tests CI-CD pipeline & architecture, which in turn reduced unit test execution time from <span class="nanum-myeongjo-extrabold"> ~21 mins to ~4 mins </span>. Resulting in faster deployments, increased productivity and better code coverage. CI-CD build time was improved by  <span class="nanum-myeongjo-extrabold"> 85%. </span> </li>
-            <li>Worked closely with product managers, executed various A/B experiments to boost online sales for browserstack's live and automate product and simplified plan/subscription upgrade journey for the end user.</li>
+            <li>
+              Collaborated with over <span class="bold"> 30+ engineers </span> and carried out Ruby on Rails and Ruby version upgrade from 4.1.15 to
+              6.0.3.6 in the core repository. Resulting in enhanced security and
+              better API performance. Created a detailed guide to streamline future version upgrades and reduce complexity for the engineering team.
+            </li>
+
+            <li>
+              Helped team revamp Unit/Functional Tests CI-CD pipeline &
+              architecture, which in turn reduced unit test execution time from
+              <span class="bold"> ~21 mins to ~4 mins </span>. Resulting in faster
+              deployments, increased productivity and better code coverage.
+              CI-CD build time was improved by
+              <span class="bold"> 85%. </span>
+            </li>
+
+            <li>
+              Carried out migration of plan/subscription upgrade journey
+              for the end user from Legacy UI (.erb) to react.
+            </li>
+
+            <li>
+              Worked closely with product managers, executed various A/B
+              experiments to boost online sales for browserstack's live and
+              automate product.
+            </li>
           </ul>
         </div>
       </div>
 
-
-      <div>
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> Techforce.ai | Product Engineer(Core team) | March 2018-June 2019 </h5>
-          <h5 class="nanum-myeongjo-bold"> Hyderabad </h5>
+      <div class="we-section">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="purple-color">
+            Techforce.ai, 
+            <span class="color-light font-light italic-font"
+              >Product Engineer(Core team)</span
+            >
+            ,
+            <span class="color-light font-light italic-font">
+              March 2018-June 2019
+            </span>
+          </h5>
+          <h5 class="italic-font">Hyderabad</h5>
         </div>
         <div class="color-light">
           <ul>
-            <li>Patched existing rasa NLP training service with multi-threaded support & improvised performance metric <span class="nanum-myeongjo-extrabold">  (from 1 to 8 models per VM) </span> along with log/error collection for better model-retraining resulting in improved nlp prediction results.</li>
-            <li>Initiated development of chatbot plugin with a bunch of action widgets, which simplified product onboarding journey and in-app assistance with just few clicks.</li>
-            <li>Built teacher-student collaboration platform from scratch with integrated chatbot for <span style="font-weight:bold;color:black">OECD.org</span></li>
+            <li>
+              Patched existing rasa NLP training service with multi-threaded
+              support & improvised model training performance metric
+              <span class="bold"> (from 1 to 8 models per VM) </span>
+              along with log/error collection for better model-retraining
+              resulting in improved nlp prediction results.
+            </li>
+            <li>
+              Initiated development of chatbot plugin with a bunch of action
+              widgets, which simplified product onboarding journey and in-app
+              assistance with just few clicks.
+            </li>
+            <li>
+              Built teacher-student collaboration platform from scratch with
+              integrated chatbot for
+              <span style="font-weight: bold; color: black">OECD.org</span>
+            </li>
           </ul>
         </div>
       </div>
 
-
-      <div>
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> Binarynumbers | Full Stack Engineer | May 2017-February 2018 </h5>
-          <h5 class="nanum-myeongjo-bold"> Mumbai </h5>
+      <div class="we-section">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="purple-color">
+            Binarynumbers, <span class="color-light font-light italic-font"
+              >Full Stack Engineer
+            </span>
+            ,
+            <span class="color-light font-light italic-font"
+              >May 2017-February 2018</span
+            >
+          </h5>
+          <h5 class="italic-font">Mumbai</h5>
         </div>
         <div class="color-light">
           <ul>
-            <li>Implemented Leads-management system for DAMAC which syncs user-tracking events <span class="nanum-myeongjo-extrabold"> (over ~5K events/hour) </span> from multiple-marketing channels/landing pages/hubspot/facebook and creates high probability cohort and helps sales-rep make the decision easier and better leads conversion.</li>
-            <li>CMS/Website builder for DAMAC Properties Dubai, created a platform to dynamically create and serve marketing landing pages/accelerated-mobile-pages (page speed < 1.5 seconds) by simply using drag-drop. </li>
+            <li>
+              Implemented Leads-management system for DAMAC which syncs
+              user-tracking events
+              <span class="bold"> (over ~50K events/hour) </span>
+              from multiple-marketing channels/landing pages/hubspot/facebook
+              and creates high probability cohort and helps sales-rep make the
+              decision easier and better leads conversion.
+            </li>
+            <li>
+              CMS/Website builder for DAMAC Properties Dubai, created a platform
+              to dynamically create and serve marketing landing
+              pages/accelerated-mobile-pages (page speed < 1.5 seconds) by
+              simply using drag-drop.
+            </li>
           </ul>
         </div>
       </div>
-
-
     </div>
 
-    <div class="nanum-myeongjo-regular" style="margin-top: 10px">
-      <div >
-        <h5 class="color-light"> Skills </h5>
+    <div class="" style="margin-top: 10px">
+      <hr
+        style="
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          border-top-width: 0px;
+        "
+      />
+      <div>
+        <h5 class="">Skills</h5>
       </div>
-      <hr style="width: 100%; border-bottom: 1px solid #ccc; border-top-width: 0px;"/>
       <div>
         <div>
           <ul class="no-dot">
             <li>
-              Languages : <span class="nanum-myeongjo-extrabold"> nodeJS, golang, ruby, bash </span>
+              Programming Languages :
+              <span class="skills-item">
+                nodeJS, typescript,ruby, golang, python, bash
+              </span>
             </li>
             <li>
-              Frameworks : <span class="nanum-myeongjo-extrabold">express, react, react-native, ruby-on-rails, langchain </span>
+              Frameworks :
+              <span class="skills-item"
+                >express, react, react-native, ruby-on-rails, langchain
+              </span>
             </li>
             <li>
-              Database & Tools : <span class="nanum-myeongjo-extrabold"> sql, mongoDB,redis, docker, nginx, amqp, efk, llm & gpt </span>
+              Database & Tools :
+              <span class="skills-item">
+                postgresSQL, SQL, mongoDB, redis, docker, nginx, rabbitmq,
+                elastic-search, git, llm & gpt
+              </span>
             </li>
             <li>
-              Cloud Platforms :  <span class="nanum-myeongjo-extrabold"> AWS, GCP </span>
+              Cloud Platforms :
+              <span class="skills-item"> AWS, GCP </span>
+            </li>
+
+            <li>
+              Analytics :
+              <span class="skills-item"> amplitude, google-analytics, big-query </span>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="nanum-myeongjo-regular" style="margin-top: 10px">
-      <div >
-        <h5 class="color-light"> Projects </h5>
-      </div>
-      <hr style="width: 100%; border-bottom: 1px solid #ccc; border-top-width: 0px;"/>
-      <div  style="margin-top: 10px">
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> upweb.io </h5>
-          <h5 class="nanum-myeongjo-bold"> golang, nodeJS, pgSQL, docker, nginx, lets-encrypt(cert-bot) </h5>
-        </div>
-        <div style="margin-top: 5px" class="color-light">
-          <p class="nanum-myeongjo-regular">Developers can easily deploy static and dynamic dynamic-websites, restapi on upweb just by using a git push command and zero configurations, hosted app gets deployed on a upweb subdomain with SSL certificates. Developers can view/monitor real-time logs on upweb-dashboard</p>
-        </div>
+    <div class="" style="margin-top: 5px">
+      <hr
+        style="
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          border-top-width: 0px;
+        "
+      />
+
+      <div>
+        <h5 class="">Personal Projects</h5>
       </div>
 
 
-      <div  style="margin-top: 10px">
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> echo </h5>
-          <h5 class="nanum-myeongjo-bold"> golang, redis, minio </h5>
+      <div style="margin-top: 10px">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class=""> xFunc | <span> <a href="https://github.com/sjljrvis/xFunc"> @github/xFunc </a> </span> </h5>
+          <h5 class="color-light">
+            golang, docker, LLM, langchain, open-ai, rpc
+          </h5>
         </div>
         <div style="margin-top: 5px" class="color-light">
-          <p class="nanum-myeongjo-regular">Simple syslog drain collection
-            service developed to view &
-            manage real-time STDIN STOUT
-            logs generated by dockerised
-            apps hosted on upweb.io</p>
+          <p class="">
+            xFunc is an RPC-based service designed to allow users to interact seamlessly using natural language. User input in the form of natural language statements is interpreted as executable code blocks. These code blocks are processed and executed by the service, and the corresponding results are returned to the user. 
+          </p>
         </div>
       </div>
-      
+
+      <div style="margin-top: 10px">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="">upweb.io | <span> <a href="https://github.com/sjljrvis/upweb"> @github/upweb </a> </span> </h5>
+          <h5 class="color-light">
+            golang, nodeJS, pgSQL, docker, nginx, lets-encrypt(cert-bot)
+          </h5>
+        </div>
+        <div style="margin-top: 5px" class="color-light">
+          <p class="">
+            Developers can easily deploy static/dynamic dynamic-websites,
+            restapi on upweb just by using a git push command and zero
+            configurations, hosted app gets deployed on a upweb subdomain with
+            SSL certificates. Developers can view/monitor real-time logs on
+            upweb-dashboard
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top: 10px">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="">zWorker <span> | <a href="https://github.com/sjljrvis/zworker"> @github/zworker </a> </span> </h5>
+          <h5 class="color-light"> nodeJS, pgSQL </h5>
+        </div>
+        <div style="margin-top: 5px" class="color-light">
+          <p class="">
+            zWorker is a lightweight publish-subscribe (pub-sub) service built on top of a PostgreSQL datastore. It efficiently leverages PostgreSQL’s capabilities to handle thread-safe read/writes transactional queries, enabling reliable communication between publishers and subscribers.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="nanum-myeongjo-regular" style="margin-top: 10px">
-      <div >
-        <h5 class="color-light"> Education </h5>
+    <div class="" style="margin-top: 5px">
+      <hr
+        style="
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          border-top-width: 0px;
+        "
+      />
+      <div>
+        <h5 class="">Education</h5>
       </div>
-      <hr style="width: 100%; border-bottom: 1px solid #ccc; border-top-width: 0px;"/>
-      <div  style="margin-top: 10px">
-        <div style="display:flex; flex-direction: row; justify-content:space-between">
-          <h5 class="nanum-myeongjo-bold"> Bachelor in Electronics and Telecommunication Engineering </h5>
-          <h5 class="nanum-myeongjo-bold"> 2012 - 2016 </h5>
+
+      <div style="margin-top: 10px">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <h5 class="">
+            Bachelor in Electronics and Telecommunication Engineering
+          </h5>
+          <h5 class="">2012 - 2016</h5>
         </div>
-        <h5 class="color-light"> University of Pune</h5>
+        <h5 class="color-light">University of Pune</h5>
       </div>
-      
     </div>
   </body>
 
   <style>
     body {
+      font-family: "Nunito Sans", sans-serif;
       margin: 0px;
       /* color: #303030; */
-      color: black;
+      color: #333;
     }
 
     h1,
@@ -207,35 +432,39 @@
       margin: 0;
     }
 
-    p,li {
-      font-size: 13px;
+    a {
+      font-weight: lighter;
+    }
+
+    p,
+    li {
+      font-size: 12px;
     }
 
     .no-dot {
       list-style-type: none;
-       padding: 0;
+      padding: 0;
+    }
+
+    .purple-color {
+      color: #000adb;
+    }
+
+    .italic-font {
+      font-style: italic;
+      margin-right: 1px;
     }
 
     .color-light {
-      color: #444
+      color: #666;
     }
 
-    .nanum-myeongjo-bold {
-      font-family: "Nanum Myeongjo", serif;
-      font-weight: 700;
-      font-style: normal;
+    .font-light {
+      font-weight: lighter;
     }
 
-    .nanum-myeongjo-extrabold {
-      font-family: "Nanum Myeongjo", serif;
-      font-weight: 800;
-      font-style: normal;
-    }
-
-    .nanum-myeongjo-regular {
-      font-family: "Nanum Myeongjo", serif;
-      font-weight: 400;
-      font-style: normal;
+    .bold {
+      font-weight: bold;
     }
 
     .center {
@@ -254,6 +483,20 @@
     .margin-5 {
       margin-left: 5px;
       margin-right: 5px;
+    }
+
+    .we-section {
+      margin-top: 8px;
+    }
+
+    ul {
+      margin: 2px;
+      padding-inline-start: 15px;
+    }
+
+    .skills-item {
+      margin-left: 10px;
+      color: #666;
     }
   </style>
 </html>
