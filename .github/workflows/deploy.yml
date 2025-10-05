@@ -1,8 +1,8 @@
-name: Deploy Next.js to GitHub Pages
+name: Deploy Next.js portfolio
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "next-app" ]  # deploy whenever you push to next-app
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and export static site
+      - name: Build and export
         run: |
           npm run build
           npx next export
