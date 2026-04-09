@@ -6,7 +6,7 @@ export default function Home() {
       Hi 👋🏼
       </p>
       <p className="text-xs max-w-2xl leading-7 text-[var(--muted)]">
-        I'm Sejal. This site showcases a selection of my hobby projects, published software, and various app and web experiments I tinker with in my free time. I enjoy building scalable software for both mobile and web platforms and love experimenting and implementing new ideas from scratch.
+        I&apos;m Sejal. This site showcases a selection of my hobby projects, published software, and various app and web experiments I tinker with in my free time. I enjoy building scalable software for both mobile and web platforms and love experimenting and implementing new ideas from scratch.
         With over 7+ years of experience as a  Fullstack Engineer, I have strong expertise in Node.js, Golang, React, and Ruby. I strive to keep things minimal and focus on delivering great products.
       </p>
 

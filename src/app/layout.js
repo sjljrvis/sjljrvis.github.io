@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Instrument_Serif, Gilda_Display } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import ThemeToggle from './components/theme-toggle'
 import DinoGame from "./components/dino-game";
@@ -36,26 +37,26 @@ export default function RootLayout({ children }) {
               </h1>
 
               <div className="flex gap-6 text-base" style={{ justifyContent: "end" }}>
-                <a className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/">
+                <Link className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/">
                   HOME
-                </a>
-                <a className="text-xs  text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/resume">
+                </Link>
+                <Link className="text-xs  text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/resume">
                   RESUME
-                </a>
-                <a className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/projects">
+                </Link>
+                <Link className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }} href="/projects">
                   PROJECTS
-                </a>
+                </Link>
 
-                <a className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }}>
+                <div className="text-xs text-[var(--muted)] hover:text-[var(--foreground)]" style={{ letterSpacing: 1.5 }}>
                   <ThemeToggle />
-                </a>
+                </div>
               </div>
 
             </nav>
           </header>
           <main className="mx-auto w-full max-w-3xl px-6 py-12">{children}</main>
           <footer className="mx-auto w-full max-w-3xl px-6 py-1">
-            <h2 className="text-sm py-4 text-[var(--muted)]"> Let's connect ?</h2>
+            <h2 className="text-sm py-4 text-[var(--muted)]"> Let&apos;s connect ?</h2>
             <div className="mb-4 flex flex-wrap items-center gap-x-8 gap-y-2 text-xs text-[var(--muted)]">
               <a className="inline-flex items-center gap-1 hover:text-[var(--foreground)]" href="mailto:hello@sejal.dev">
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current">
