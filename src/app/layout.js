@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Instrument_Serif, Gilda_Display } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 import ThemeToggle from './components/theme-toggle'
 import DinoGame from "./components/dino-game";
@@ -19,8 +20,17 @@ const instrumentSerief = Gilda_Display({
 });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "Simple monochromatic portfolio website",
+  title: "Sejal Chougule | Fullstack Engineer | India",
+  description: "Fullstack Javascript Engineer",
+  keywords: ["Sejal Chougule", "sejal", "chougule", "sejalchougule"],
+  verification: {
+    google: "7EljSZU82WRhIHxH5vi0b_n9HLnR99R5pEBrndvNmcw",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
@@ -115,7 +125,20 @@ export default function RootLayout({ children }) {
 
           </footer>
         </div>
+        <Script
+          id="google-analytics-inline"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ERZZB5WKJL');
+            `,
+          }}
+        />
       </body>
+
     </html>
   );
 }
