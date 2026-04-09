@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 const GAME_WIDTH = 480;
 const GAME_HEIGHT = 96;
@@ -131,7 +132,7 @@ export default function DinoGame() {
       <div className="mb-1 flex items-center justify-between text-[11px] text-[var(--muted)]">
       </div>
       <button
-        type="button" 
+        type="button"
         onClick={jump}
         className="relative block w-full overflow-hidden rounded bg-[var(--background)]"
         style={{ height: GAME_HEIGHT }}
@@ -145,23 +146,19 @@ export default function DinoGame() {
           className="absolute"
           style={{
             left: DINO_X - 3,
-            bottom: obstacleBottom + dinoY - 1,
-            width: 40     ,
-            height: 25,
+            bottom: obstacleBottom + dinoY +1,
+            width: 40,
+            height: 30,
           }}
           aria-hidden="true"
         >
-          <svg viewBox="0 0 24 18" className="h-full w-full">
-            <rect x="5" y="1" width="14" height="11" fill="#e5754f" />
-            <rect x="3" y="4" width="2" height="5" fill="#e5754f" />
-            <rect x="19" y="4" width="2" height="5" fill="#e5754f" />
-            <rect x="6" y="12" width="2" height="5" fill="#e5754f" />
-            <rect x="9" y="12" width="2" height="5" fill="#e5754f" />
-            <rect x="12" y="12" width="2" height="5" fill="#e5754f" />
-            <rect x="15" y="12" width="2" height="5" fill="#e5754f" />
-            <rect x="8" y="5" width="2" height="2" fill="#111111" />
-            <rect x="14" y="5" width="2" height="2" fill="#111111" />
-          </svg>
+          <Image
+            src="/crab.svg"
+            alt="image"
+            width={100}
+            height={100}
+          />
+
         </div>
         <div
           className="absolute"
