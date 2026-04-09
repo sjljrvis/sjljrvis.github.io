@@ -23,6 +23,9 @@ export const metadata = {
   title: "Sejal Chougule | Fullstack Engineer | India",
   description: "Fullstack Javascript Engineer",
   keywords: ["Sejal Chougule", "sejal", "chougule", "sejalchougule"],
+  icons: {
+    icon: "/favicon.ico",
+  },
   verification: {
     google: "7EljSZU82WRhIHxH5vi0b_n9HLnR99R5pEBrndvNmcw",
   },
@@ -70,7 +73,6 @@ export default function RootLayout({ children }) {
           <div className="game py-22">
               <DinoGame />
             </div>
-
 
             <h2 className="text-sm py-4 text-[var(--muted)]"> Let&apos;s connect ?</h2>
             <div className="mb-4 flex flex-wrap items-center gap-x-8 gap-y-2 text-xs text-[var(--muted)]">
