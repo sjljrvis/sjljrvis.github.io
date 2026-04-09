@@ -1,103 +1,44 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <section className="space-y-6">
+      <p className="text-xs text-[var(--muted)]"> ~/sejal/home </p>
+      <p>
+      Hi 👋🏼
+      </p>
+      <p className="text-xs max-w-2xl leading-7 text-[var(--muted)]">
+        I'm Sejal. This site showcases a selection of my hobby projects, published software, and various app and web experiments I tinker with in my free time. I enjoy building scalable software for both mobile and web platforms and love experimenting and implementing new ideas from scratch.
+        With over 7+ years of experience as a  Fullstack Engineer, I have strong expertise in Node.js, Golang, React, and Ruby. I strive to keep things minimal and focus on delivering great products.
+      </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="space-y-4">
+        <p className="text-xs tracking-[0.2em] text-[var(--muted)]">TIMELINE</p>
+        <div className="space-y-5">
+          <div className="border-l border-[var(--border)] pl-4">
+            <p className="text-xs text-[var(--muted)]">Oct 2021 - Present</p>
+            <p className="text-sm text-[var(--foreground)]">supervity.ai</p>
+            <p className="text-sm text-[var(--muted)]">Senior Solution Engineer-T2 (Core Team)</p>
+          </div>
+          <div className="border-l border-[var(--border)] pl-4">
+            <p className="text-xs text-[var(--muted)]">Jun 2019 - Sep 2021</p>
+            <p className="text-sm text-[var(--foreground)]">BrowserStack</p>
+            <p className="text-sm text-[var(--muted)]">Fullstack Engineer (Growth Team)</p>
+          </div>
+          <div className="border-l border-[var(--border)] pl-4">
+            <p className="text-xs text-[var(--muted)]">Mar 2018 - Jun 2019</p>
+            <p className="text-sm text-[var(--foreground)]">techforce.ai</p>
+            <p className="text-sm text-[var(--muted)]">Product Engineer (Core Team)</p>
+          </div>
+          <div className="border-l border-[var(--border)] pl-4">
+            <p className="text-xs text-[var(--muted)]">May 2017 - Feb 2018</p>
+            <p className="text-sm text-[var(--foreground)]">binarynumbers.io</p>
+            <p className="text-sm text-[var(--muted)]">Fullstack Developer</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      {/* <div className="rounded-md border border-[var(--border)] bg-[var(--surface)] p-5 text-sm text-[var(--muted)]">
+        Explore my background in <a className="underline underline-offset-4" href="/resume">/resume</a> and selected work in{" "}
+        <a className="underline underline-offset-4" href="/projects">/projects</a>.
+      </div> */}
+    </section>
   );
 }
